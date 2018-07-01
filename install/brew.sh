@@ -12,7 +12,7 @@ formulas=(
     ack
     diff-so-fancy
     direnv
-    dnsmasq
+    # dnsmasq
     fzf
     git
     'grep --with-default-names'
@@ -22,8 +22,8 @@ formulas=(
     mas
     neovim/neovim/neovim
     node
-    nginx
-    python
+    # nginx
+    # python
     rbenv
     reattach-to-user-namespace
     the_silver_searcher
@@ -39,6 +39,22 @@ formulas=(
     git-standup
     entr
     zplug
+    hugo
+)
+
+apps=(
+    shadowsocksx-ng
+    iina
+    anaconda
+    lastfm
+    megasync
+    google-chrome
+    iterm2
+    spotify
+    vmware-fusion
+    visual-studio-code
+    cheatsheet
+    calibre
 )
 
 for formula in "${formulas[@]}"; do
@@ -47,6 +63,15 @@ for formula in "${formulas[@]}"; do
         echo "$formula_name already installed... skipping."
     else
         brew install "$formula"
+    fi
+done
+
+for app in "${apps[@]}"; do
+    app_name=$( echo "$app" | awk '{print $1}' )
+    if brew cask list "$app_name" > /dev/null 2>&1; then
+        echo "$app_name already installed... skipping."
+    else
+        brew cask install "$app"
     fi
 done
 
