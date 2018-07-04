@@ -1,19 +1,16 @@
 #!/usr/bin/env bash
 
-DOTFILES=$HOME/code/dotfiles
+DOTFILES=$HOME/.dotfiles
 
 echo -e "\\nCreating symlinks"
 echo "=============================="
-linkables=$( find -H "$DOTFILES" -maxdepth 3 -name '*.symlink' )
-for file in $linkables ; do
-    target="$HOME/.$( basename "$file" '.symlink' )"
-    if [ -e "$target" ]; then
-        echo "~${target#$HOME} already exists... Skipping."
-    else
-        echo "Creating symlink for $file"
-        ln -s "$file" "$target"
-    fi
-done
+ln -s "$DOTFILES/ack/ackrc.symlink" "$HOME/.ackrc"
+ln -s "$DOTFILES/eslintrc.symlink" "$HOME/.eslintrc"
+ln -s "$DOTFILES/git/gitconfig.symlink" "$HOME/.gitconfig"
+ln -s "$DOTFILES/git/gitignore_global.symlink" "$HOME/.gitignore_global"
+ln -s "$DOTFILES/rgrc.symlink" "$HOME/.rgrc"
+ln -s "$DOTFILES/tmux/tmux.conf.symlink" "$HOME/.tmux.conf"
+ln -s "$DOTFILES/zsh/zshrc.symlink" "$HOME/.zshrc"
 
 echo -e "\\n\\ninstalling to ~/.config"
 echo "=============================="
