@@ -68,7 +68,7 @@ set-window-option -g clock-mode-colour $base0C
 tm_session_name="#[default,bg=$base0E,fg=$base01] #S "
 set -g status-left "$tm_session_name"
 
-tm_tunes="#[bg=$base0D,fg=$base01]  #(osascript -l JavaScript ~/.dotfiles/applescripts/tunes.js)"
+tm_tunes="#[bg=$base0D,fg=$base01] #(osascript -l JavaScript ~/.dotfiles/applescripts/tunes.js)"
 #
 # tm_tunes="#[bg=$base0D,fg=$base01] ♫ #(osascript -l JavaScript ~/.dotfiles/applescripts/tunes.js)"
 # tm_tunes="#[fg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/tunes.scpt | cut -c 1-50)"

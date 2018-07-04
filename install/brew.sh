@@ -40,6 +40,7 @@ formulas=(
     entr
     zplug
     hugo
+    autojump
 )
 
 apps=(
