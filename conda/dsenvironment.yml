@@ -1,0 +1,16 @@
+name: ds
+
+dependencies:
+  - python=3.6.5
+  - numpy
+  - matplotlib
+  - pandas
+  - scipy
+  - seaborn
+  - pip
+  - sqlite
+  - bokeh
+  - plotly
+  - scikit-learn
+  - jupyter
+  - basemap

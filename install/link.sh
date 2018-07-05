@@ -11,6 +11,7 @@ ln -s "$DOTFILES/git/gitignore_global.symlink" "$HOME/.gitignore_global"
 ln -s "$DOTFILES/rgrc.symlink" "$HOME/.rgrc"
 ln -s "$DOTFILES/tmux/tmux.conf.symlink" "$HOME/.tmux.conf"
 ln -s "$DOTFILES/zsh/zshrc.symlink" "$HOME/.zshrc"
+ln -s "$DOTFILES/conda/dsenvironment.yml" "$HOME/dsenvironment.yml"
 
 echo -e "\\n\\ninstalling to ~/.config"
 echo "=============================="

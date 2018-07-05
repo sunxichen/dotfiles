@@ -121,4 +121,4 @@ export LESS_TERMCAP_mh=$(tput dim)
 # export SHELLCHECK_OPTS=""
 
 # add anaconda support
-# export PATH=/usr/local/anaconda3/bin:/usr/local/anaconda3/bin:/usr/local/Cellar/zplug/2.4.2/repos/zplug/zplug/bin:/usr/local/opt/zplug/bin:/Users/sunxichen/.rbenv/shims:/Users/sunxichen/.dotfiles/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/opt/X11/bin:/usr/local/opt/fzf/bin
+export PATH="/usr/local/anaconda3/bin:/usr/local/anaconda3/bin:/usr/local/Cellar/zplug/2.4.2/repos/zplug/zplug/bin:/usr/local/opt/zplug/bin:/Users/sunxichen/.rbenv/shims:/Users/sunxichen/.dotfiles/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/opt/X11/bin:/usr/local/opt/fzf/bin"
