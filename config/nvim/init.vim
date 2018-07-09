@@ -351,6 +351,9 @@ call plug#begin('~/.config/nvim/plugged')
 	" search inside files using ripgrep. This plugin provides an Ack command.
 	Plug 'wincent/ferret'
 
+	" WakaTime. This plugin automaticly track your coding time.
+	Plug 'wakatime/vim-wakatime'
+
 	" insert or delete brackets, parens, quotes in pair
 	Plug 'jiangmiao/auto-pairs'
 
