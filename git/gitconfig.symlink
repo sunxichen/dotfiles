@@ -1,7 +1,7 @@
 # gitconfig
 [user]
-    name = Xichen Sun
-    email = thisissunxichen@outlook.com
+	name = Xichen Sun
+	email = thisissunxichen@outlook.com
 [github]
     user = sunxichen
 [init]
@@ -168,3 +168,8 @@
 	proxy = http://127.0.0.1:1087
 [https]
 	proxy = https://127.0.0.1:1087
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
