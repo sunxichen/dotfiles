@@ -17,7 +17,7 @@ apps=(
     "Bear:1091189122"
     "WeChat:836500024"
     "Spark:1176895641"
-    "The Unarchiver:425424353"s
+    "The Unarchiver:425424353"
     "Maipo:789066512"
 )
 
