@@ -607,7 +607,8 @@ call plug#begin('~/.config/nvim/plugged')
 		let g:ale_linters = {
 		\	'javascript': ['eslint'],
 		\	'typescript': ['tsserver', 'tslint'],
-		\	'html': []
+		\	'html': [],
+		\   'python': ['pylint']
 		\}
 		let g:ale_fixers = {}
 		let g:ale_fixers['javascript'] = ['prettier']

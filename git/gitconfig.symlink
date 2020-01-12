@@ -166,7 +166,7 @@
     diff = "diff-so-fancy | less --tabs=4 -RFX"
     show = "diff-so-fancy | less --tabs=4 -RFX"
 [http]
-	proxy = http://127.0.0.1:1087
+	postBuffer = 1048576000
 [https]
 	proxy = https://127.0.0.1:1087
 [filter "lfs"]

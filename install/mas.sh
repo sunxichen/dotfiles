@@ -19,6 +19,7 @@ apps=(
     "Spark:1176895641"
     "The Unarchiver:425424353"
     "Maipo:789066512"
+    "Yoink:457622435"
 )
 
 for app in "${apps[@]}"; do

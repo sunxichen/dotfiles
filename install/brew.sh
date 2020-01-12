@@ -47,8 +47,8 @@ apps=(
     shadowsocksx-ng
     iina
     anaconda
-    lastfm
-    megasync
+    hiddenbar
+    contexts
     google-chrome
     iterm2
     spotify
@@ -56,6 +56,8 @@ apps=(
     visual-studio-code
     cheatsheet
     calibre
+    postman
+    mathpix-snipping-tool
 )
 
 for formula in "${formulas[@]}"; do
